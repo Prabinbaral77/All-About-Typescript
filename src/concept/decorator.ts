@@ -110,3 +110,25 @@ console.log("User ID:", userService.userId);
 userService.userId = 456;
 const isValid = userService.validateUser(456, 'admin');
 console.log("Validation result:", isValid);
+
+
+
+
+//output
+// Method decorator factory called with: User validation method
+// Parameter decorator: validateUser, index: 1
+// Parameter decorator: validateUser, index: 0
+// Method decorator applied to: validateUser
+// Class decorator factory called with: User Management Class
+// Class decorator applied to: UserService
+// Message: User Management Class
+// Setting property: userId to 0
+// Setting property: userId to 123
+// Getting property: userId
+// User ID: 123
+// Setting property: userId to 456
+// Starting validateUser with arguments: [456,"admin"]
+// Message: User validation method
+// Validating user with ID: 456 and role: admin
+// Finished validateUser with result: true
+// Validation result: true
